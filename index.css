@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+
+} 
+
+/* Typography */
+
+h1, h3, p{
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+    /* identical to box height, or 60% */
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    /* or 130% */
+    color: #000000;
+}
+
+header {
+    color: white;
+}
+
+p main {
+    color: #8B8B8B;
+}
+
+.menu-item button {
+    border: 1.5px solid #DEDEDE;
+    color: none;
+    background: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 24px;
+    /* or 75% */
+    text-align: center;
+    color: #3C3C3C;
+    cursor: pointer;
+}
+
+.emoji{
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    width: 80px;
+    font-size: 78px;
+    line-height: 98px;
+    /* or 125% */
+    
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    opacity: 0.72;
+    margin-right: 40px;
+    
+}
+
+.price, .name {
+    color: black;
+}
+
+.name{
+    font-size: 28px;
+    line-height: 17px;
+}
+
+.ingredients {
+    display: flex;
+    flex-wrap:wrap;
+    color: #8B8B8B;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+/* Layout */
+
+main{
+    margin: 0 46px 0 46px;
+}
+
+.logo-banner{
+    display: block;
+    margin-bottom: 50px;
+    background-image: url("images/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.logo-slogan{
+    padding: 56px 0 50px 46px;;
+}
+
+.menu-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-bottom:1px solid #D2D2D2;
+}
+
+.menu-div{
+    display: flex;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:space-between;
+    height: 98px;
+    
+    
+}
+
+.cart-title {
+    padding: 45px 0;
+    min-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#cart-remove{
+    color: #8B8B8B;
+    border:none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    background: none;
+    margin-left: 31px;
+    cursor: pointer;
+    text-align: center;
+    border-radius:none;
+}
+
+.item-with-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #393333;
+    padding: 14px 0;
+}
+
+#complete-order{
+    width: 100%;
+    height: 60px;
+    margin-top: 63px;
+    background: #16DB99;
+    margin-bottom: 20px;
+    /* shadow/sm */
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.cart-section{
+    margin: 0;
+}
+
+.modal{
+    position: fixed;
+    width:90%;
+    height: 75%;
+    top:10%;
+    left:5%;
+    background: white;
+    text-align: center;
+    border: solid;
+    border-radius: 5px;
+}
+
+.modal-inner{
+    margin: 0 24px;
+}
+
+.modal input {
+    display: flex;
+    margin-bottom:26px;
+    border: 1.29664px solid #757575;
+    border-radius: 3.88991px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+}
+
+.modal-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display:none;
+}
+
+#modal-btn{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    background: #16DB99;
+    background: #16DB99;
+    border-radius: 3.88991px;
+    color: #FFFFFF;
+    border:none;
+    width: 100%;
+    padding: 16px 0; 
+}
+
+.payment-complete h3{
+    background: #ECFDF5;
+    border-radius: 3px;
+    color: #065F46;
+    padding: 50px 60px;
+    font-size: 32px;
+    line-height: 26px;
+    margin: 45px 0;
+    text-align: center;
+}

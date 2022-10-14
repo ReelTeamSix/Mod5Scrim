@@ -1,0 +1,53 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class ="logo-banner">
+                <div class ="logo-slogan">
+                    <h1>Jimmy's Diner</h1>
+                    <p>The best burgers and pizza in town.</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="menu-container">
+            </div>
+            <div id="cart-section" class="cart-section">
+                <h3 class="cart-title">Your Order</h3>
+                <div id="cart-container">
+                </div>
+            </div>
+            <div id="paid-container" class="payment-complete hidden">
+            </div>
+            <div id="modal" class="modal hidden">
+                <div class="modal-inner">
+                    <div class="modal-title">
+                        <h4>Enter card details</h4>
+                    </div>
+                    <form id="payment-form">
+                        <div class="modal-inputs">
+                            <input id="cardName" 
+                            placeholder="Enter your name" 
+                            type="text" 
+                            required/>
+                            <input placeholder="Enter card number" type="tel" required pattern="[0-9\s]{13,19}"/>
+                            <input maxlength="3" placeholder="Enter CVV" type="password" required/>
+                        </div>
+                        <div>
+                            <button id="modal-btn" type="submit">Pay</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
